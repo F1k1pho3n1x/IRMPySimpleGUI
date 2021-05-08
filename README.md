@@ -14,7 +14,7 @@
 
 ## Skelet svake forme
 
-```
+```python
 import PySimpleGUI as sg
 
 sadrzaj = [
