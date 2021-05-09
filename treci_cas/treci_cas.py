@@ -41,7 +41,6 @@ sadrzaj = [
     ],
 ]
 
-prethodno = datetime.now()
 trenutno = datetime.now()
 prozor = sg.Window("Alarm", sadrzaj)
 sacuvan_alarm = ""
