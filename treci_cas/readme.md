@@ -1,7 +1,7 @@
 # Treći čas
 
 ## Domaći zadatak 
-**Rok za predaju:** 11.05.2021. (19:59)
+**Rok za predaju:** 11.05.2021. (19:59) \
 **Fajl:** *digitalni_sat.py*
 1) Otkloniti pass ključnu reč u 67. liniji 
 2) Definisati funkcionalnost dugmeta *Odloži* pomoćnom funkcijom ili unutar uslova u 66. liniji
