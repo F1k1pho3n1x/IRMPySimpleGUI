@@ -96,3 +96,4 @@ def je_prestupna(godina):
   else:
     return False
 ```
+10) Napisati funkciju **dodaj_nulu()**  
