@@ -1,8 +1,26 @@
 # Zadaci
 1) Napisati funkciju **date_to_str()** koja pomoću **datetime.now()** formira i vraća string današnjeg dana u formatu **"DD-MM-GGGG"**.  
 2) Napisati funkciju **date_to_int()** koja pomoću **datetime.now()** formira i vraća listu celih brojeva, kojim se određuje današnji dan u formatu **[dan, mesec, godina]**.  
-3) Napisati funkciju **timef_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM:SS"**.  
-4) ~~Napisati funkciju **times_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM"**.~~  
+3) ~~Napisati funkciju **timef_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM:SS"**.~~  
+```python
+# DARKO
+def timef_to_str():
+  trenutno_vreme = datetime.now().hour, datetime.now().minute, datetime.now().second
+  
+  if trenutno_vreme[0] < 10:
+    trenutno_vreme[0] = "0" + str(trenutno_vreme[0])
+
+  if trenutno_vreme[1] < 10:
+    trenutno_vreme[1] = "0" + str(trenutno_vreme[1])
+
+  if trenutno_vreme[2] < 10:
+    trenutno_vreme[2] = "0" + str(trenutno_vreme[2])
+
+  vreme_u_formatu = str(trenutno_vreme[0]) + ":" + str(trenutno_vreme[1]) + ":" + str(trenutno_vreme[2])
+
+  return vreme_u_formatu
+```
+5) ~~Napisati funkciju **times_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM"**.~~  
 ```python
 # DARKO
 def times_to_str():
