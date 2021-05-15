@@ -7,3 +7,16 @@
 6) Napisati funkciju **dohvati_indeks_meseca(mesec)** koja za prosleđeno ime meseca, napisano nezavisno kojim slovima ("januar", "JANUAR", "JaNUAr", ...), vraća celobrojnu vrednost indeksa meseca tog dana.  
 7) Napisati funkciju **dohvati_broj_dana(indeks, godina)** koja za prosleđen broj indeksa meseca i godine, određuje koliko taj mesec ima dana.  
 8) Napisati funkciju **je_prestupna(godina)** koja za prosleđenu godinu vraća **True** ili **False** u zavisnosti od toga da li je godina prestupna ili ne.  
+```python
+def je_prestupna(godina):
+  if godina%4==0:
+    if godina%100==0:
+      if godina%400==0:
+        return True
+      else:
+        return False
+    else:
+      return True
+  else:
+    return False
+```
