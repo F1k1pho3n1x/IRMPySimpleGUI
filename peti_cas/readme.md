@@ -6,7 +6,7 @@
 5) Napisati funkciju **popuni_vrednosti(lista_dana_u_mesecu, dan_u_nedelji)** koja menja prikaz u matrici dugmića, tako da se prikazuju redom datumi počev od 1 do poslednjeg dana u mesecu (uključujući). **Nepopunjena polja, moraju ostati prazna.** 
 6) Napisati funkciju **dohvati_indeks_meseca(mesec)** koja za prosleđeno ime meseca, napisano nezavisno kojim slovima ("januar", "JANUAR", "JaNUAr", ...), vraća celobrojnu vrednost indeksa meseca tog dana.  
 7) Napisati funkciju **dohvati_broj_dana(indeks, godina)** koja za prosleđen broj indeksa meseca i godine, određuje koliko taj mesec ima dana.  
-8) Napisati funkciju **je_prestupna(godina)** koja za prosleđenu godinu vraća **True** ili **False** u zavisnosti od toga da li je godina prestupna ili ne.  
+8) ~~Napisati funkciju **je_prestupna(godina)** koja za prosleđenu godinu vraća **True** ili **False** u zavisnosti od toga da li je godina prestupna ili ne.  ~~
 ```python
 def je_prestupna(godina):
   if godina%4==0:
