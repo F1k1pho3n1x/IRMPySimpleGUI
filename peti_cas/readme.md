@@ -19,8 +19,37 @@ def times_to_str():
     return vreme_u_formatu
 ```
 6) Napisati funkciju **popuni_vrednosti(lista_dana_u_mesecu, dan_u_nedelji)** koja menja prikaz u matrici dugmića, tako da se prikazuju redom datumi počev od 1 do poslednjeg dana u mesecu (uključujući). **Nepopunjena polja, moraju ostati prazna.** 
-7) Napisati funkciju **dohvati_indeks_meseca(mesec)** koja za prosleđeno ime meseca, napisano nezavisno kojim slovima ("januar", "JANUAR", "JaNUAr", ...), vraća celobrojnu vrednost indeksa meseca tog dana.  
-8) ~~Napisati funkciju **dohvati_broj_dana(indeks, godina)** koja za prosleđen broj indeksa meseca i godine, određuje koliko taj mesec ima dana.~~  
+7) ~~Napisati funkciju **dohvati_indeks_meseca(mesec)** koja za prosleđeno ime meseca, napisano nezavisno kojim slovima ("januar", "JANUAR", "JaNUAr", ...), vraća celobrojnu vrednost indeksa meseca tog dana.~~  
+```python
+# TEODOR
+def dohvati_indeks_meseca(mesec):
+  mesec = mesec.lower()
+  if "jan" in mesec:
+    return 0
+  if "feb" in mesec:
+    return 1
+  if "mar" in mesec:
+    return 2
+  if "apr" in mesec:
+    return 3
+  if "maj" in mesec:
+    return 4
+  if "jun" in mesec:
+    return 5
+  if "jul" in mesec:
+    return 6
+  if "avg" in mesec:
+    return 7
+  if "sep" in mesec:
+    return 8
+  if "okt" in mesec:
+    return 9
+  if "nov" in mesec:
+    return 10
+  if "dec" in mesec:
+    return 11
+ ```
+9) ~~Napisati funkciju **dohvati_broj_dana(indeks, godina)** koja za prosleđen broj indeksa meseca i godine, određuje koliko taj mesec ima dana.~~  
 ```python
 # TEODOR
 def dohvati_broj_dana(indeks, godina):
