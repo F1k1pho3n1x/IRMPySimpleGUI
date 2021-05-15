@@ -2,9 +2,21 @@
 1) Napisati funkciju **date_to_str()** koja pomoću **datetime.now()** formira i vraća string današnjeg dana u formatu **"DD-MM-GGGG"**.  
 2) Napisati funkciju **date_to_int()** koja pomoću **datetime.now()** formira i vraća listu celih brojeva, kojim se određuje današnji dan u formatu **[dan, mesec, godina]**.  
 3) Napisati funkciju **timef_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM:SS"**.  
-4) Napisati funkciju **times_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM"**.  
+4) ~~Napisati funkciju **times_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM"**.~~  
 ```python
 # DARKO
+def times_to_str():
+    trenutno_vreme = datetime.now().hour, datetime.now().minute
+
+    if trenutno_vreme[0] < 10:
+        trenutno_vreme[0] = "0" + str(trenutno_vreme[0])
+
+    if trenutno_vreme[1] < 10:
+        trenutno_vreme[1] = "0" + str(trenutno_vreme[1])
+
+    vreme_u_formatu = str(trenutno_vreme[0]) + ":" + str(trenutno_vreme[1])
+
+    return vreme_u_formatu
 ```
 6) Napisati funkciju **popuni_vrednosti(lista_dana_u_mesecu, dan_u_nedelji)** koja menja prikaz u matrici dugmića, tako da se prikazuju redom datumi počev od 1 do poslednjeg dana u mesecu (uključujući). **Nepopunjena polja, moraju ostati prazna.** 
 7) Napisati funkciju **dohvati_indeks_meseca(mesec)** koja za prosleđeno ime meseca, napisano nezavisno kojim slovima ("januar", "JANUAR", "JaNUAr", ...), vraća celobrojnu vrednost indeksa meseca tog dana.  
