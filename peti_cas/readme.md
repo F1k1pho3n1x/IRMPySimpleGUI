@@ -1,5 +1,5 @@
 # Zadaci
-1) Napisati funkciju **date_to_str()** koja pomoću **datetime.now()** formira i vraća string današnjeg dana u formatu **"DD-MM-GGGG"**.  
+1) Napisati funkciju **date_to_str()** koja pomoću **datetime.now()** formira i vraća string današnjeg dana u formatu **"DD/MM/GGGG"**.  
 2) Napisati funkciju **date_to_int()** koja pomoću **datetime.now()** formira i vraća listu celih brojeva, kojim se određuje današnji dan u formatu **[dan, mesec, godina]**.  
 3) ~~Napisati funkciju **timef_to_str()** koja pomoću **datetime.now()** formira i vraća string trenutnog vremena u formatu **"ČČ:MM:SS"**.~~  
 ```python
